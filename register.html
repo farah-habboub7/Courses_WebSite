@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <!-- language -->
+    <meta charset="utf-8" />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>register page</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon Box -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style Css -->
+    <link href="Style.css" rel="stylesheet" />
+
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="tabTembalte/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ===Navigation auth=== -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="Home.html">
+          <div class="d-flex">
+            <img
+              src="images/الشعار.png"
+              class="ms-3 mt-2"
+              width="55"
+              height="55"
+            />
+            <div class="mt-2">
+              <p class="pColor">اكاديمية بست ليرن التعليمية</p>
+              <p class="pColor mN fs-6">Best Learn Academy</p>
+            </div>
+          </div></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-md-flex justify-content-end w-100">
+            <div>
+              <a href="#">
+                <button
+                  class="btn btn-outline text-center text-nowrap btnAuth fw-bold d-inline-block rounded-pill px-5 py-2"
+                >
+                  طالب جديد
+                </button>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="me-md-3">
+                <button
+                  class="btn_duration text-center text-white text-nowrap btnAuth text-light fw-bold d-inline-block rounded-pill border-0 px-5 py-2"
+                >
+                  تسجيل الدخول
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- -- ===end nAvigation auth === -- -->
+
+    <div class="container-lg my-4">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6 bg-white p-5">
+          <h4 class="text-center">أنشىء حسابك الان</h4>
+          <p class="text-black-50 text-center mt-2">
+            هل لديك حساب على اكاديمية بيست ليرن
+            <span class="pColor">تسجيل دخول</span>
+          </p>
+
+          <div class="d-md-flex justify-content-center">
+            <a href="#">
+              <button
+                class="btn text-center text-white text-nowrap mt-3 shadow-none fw-bold d-inline-block px-5 py-2"
+                style="background-color: #3b5998"
+              >
+                <i class="bx bxl-facebook text-white"></i>
+                عن طريق الفيسوبك
+              </button>
+            </a>
+
+            <a href="#" class="me-md-3">
+              <button
+                class="btn btn-danger text-center text-white text-nowrap mt-3 text-light shadow-none fw-bold d-inline-block border-0 px-5 py-2"
+              >
+                <i class="bx bxl-google text-white"></i>
+                عن طريق جوجل
+              </button>
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div
+              class="mx-4 col mt-3"
+              style="height: 2px; width: 50%; background-color: #eaeaea"
+            ></div>
+            <div>
+              <p class="fs-6 mt-4">او</p>
+            </div>
+            <div
+              class="mx-4 col mt-3"
+              style="height: 2px; width: 5%; background-color: #eaeaea"
+            ></div>
+          </div>
+
+          <!-- ===Tabs Div=== -->
+          <div class="tab d-lg-flex justify-content-center mt-4">
+            <button
+              class="tablinks text-center me-3 rounded-3 px-5 text-nowrap active"
+              style="border: 1px solid #db903c"
+              onclick="openTab(event, 'normal')"
+            >
+              <div class="text-center divBtnTab">دورة عادية</div>
+            </button>
+
+            <button
+              class="tablinks text-center text-nowrap me-3 rounded-3 px-5"
+              style="border: 1px solid #db903c"
+              onclick="openTab(event, 'student')"
+            >
+              <div class="text-center divBtnTab">طالب ثانوية</div>
+            </button>
+            <button
+              class="tablinks text-center text-nowrap me-3 rounded-3 px-5"
+              style="border: 1px solid #db903c"
+              onclick="openTab(event, 'teacher')"
+            >
+              <div class="text-center text-nowrap divBtnTab">حساب معلم</div>
+            </button>
+          </div>
+          <div id="normal" class="tabcontent">
+            <form method="post" class="form theme-form">
+              <div class="row mt-3 d-flex">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label class="text-black-50 mb-2">الاسم بالكامل </label>
+                    <input
+                      class="form-control py-2"
+                      placeholder="ادخل اسمك بالكامل"
+                    />
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2 text-black-50">
+                      البريد الالكتروني
+                    </label>
+                    <input
+                      class="form-control py-2"
+                      placeholder="ادخل البريد الالكتروني"
+                    />
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2">الفرع</label>
+                    <input
+                      class="form-control py-2"
+                      placeholder="ادخل اسم الفرع"
+                    />
+
+                    <span
+                      asp-validation-for="user.Specialization"
+                      class="text-danger"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2">اسم المدرسة</label>
+                    <input
+                      class="form-control py-2"
+                      placeholder="ادخل اسم المدرسة"
+                    />
+
+                    <span
+                      asp-validation-for="user.Specialization"
+                      class="text-danger"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2"> عنوان السكن </label>
+                    <input
+                      class="form-control py-2"
+                      placeholder=" خانيونس- طريق المشروع- شارع السد العالي "
+                    />
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2">رقم الجوال </label>
+                    <input
+                      type="text"
+                      class="form-control py-2"
+                      placeholder="05972654 "
+                    />
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2">كلمة المرور </label>
+                    <input
+                      type="text"
+                      class="form-control py-2"
+                      placeholder="ادخل كلمة المرور "
+                    />
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2 mb-2">تاكيد كلمة المرور</label>
+                    <input
+                      type="text"
+                      class="form-control py-2"
+                      placeholder="تاكيد كلمة المرور "
+                    />
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label
+                    class="form-check-label me-md-2"
+                    for="flexCheckChecked"
+                  >
+                    <p class="text-black-50 text-nowrap">
+                      قرأت وأوافق على
+                      <span class="pColor"
+                        >شروط الاستخدام و ساسية الخصوصية</span
+                      >
+                    </p>
+                  </label>
+                </div>
+                <div class="col mt-3 text-center">
+                  <button
+                    class="btn_duration0 text-center text-white text-nowrap text-light fw-bold d-inline-block rounded-3 border-0 px-5 py-2 me-2"
+                  >
+                    انشاء حساب
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      ///Tab
+      function openTab(evt, TabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          if (tabcontent[i].id !== TabName) {
+            tabcontent[i].classList.add("d-none");
+            tabcontent[i].classList.remove("d-block");
+          } else {
+            tabcontent[i].classList.add("d-block");
+            tabcontent[i].classList.remove("d-none");
+          }
+          console.log(tabcontent[i]);
+          console.log(evt);
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script -->
+    <script src="Script.js"></script>
+  </body>
+</html>

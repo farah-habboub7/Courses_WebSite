@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <!-- language -->
+    <meta charset="utf-8" />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>profile page</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon Box -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style Css -->
+    <link href="Style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ===Navigation=== -->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navColor">
+      <div class="container-fluid mx-md-5">
+        <a class="navbar-brand text-white mb-1" href="Home.html"
+          ><img src="images/logo.png" height="55"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bx bx-menu text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 w-75 mx-auto">
+            <li class="nav-item mx-md-auto">
+              <a
+                class="nav-link text-light fw-bold active linkunderline"
+                href="Home.html"
+                >الرئيسية</a
+              >
+            </li>
+
+            <li class="nav-item mx-md-auto">
+              <a
+                class="nav-link text-light fw-bold linkunderline"
+                href="about.html"
+                >من نحن</a
+              >
+            </li>
+
+            <li class="nav-item mx-md-auto dropdown">
+              <a
+                class="nav-link dropdown-toggle linkunderline text-light"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الدورات التدريبية
+              </a>
+              <ul
+                class="dropdown-menu text-end"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">الدورات التدريبية </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">الدورات التدريبية</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">الدورات التدريبية</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-md-auto dropdown">
+              <a
+                class="nav-link dropdown-toggle linkunderline text-light"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الثانوية العامة
+              </a>
+              <ul
+                class="dropdown-menu text-end"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">الدورات التدريبية </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">الدورات التدريبية</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">الدورات التدريبية</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-md-auto">
+              <a class="nav-link text-light fw-bold linkunderline" href="team"
+                >طاقم التدريب</a
+              >
+            </li>
+
+            <li class="nav-item mx-md-auto">
+              <a
+                class="nav-link text-light fw-bold linkunderline"
+                href="cart.html"
+              >
+                الية الدفع</a
+              >
+            </li>
+
+            <li class="nav-item mx-md-auto">
+              <a
+                class="nav-link text-light fw-bold linkunderline"
+                href="contactUs"
+              >
+                اتصل بنا</a
+              >
+            </li>
+          </ul>
+          <!-- لم يتم تسجيل الدخول -->
+          <div class="d-flex justify-content-center">
+            <div class="mt-1">
+              <a href="#">
+                <button
+                  class="btn btn-outline text-center text-white text-nowrap fw-bold d-inline-block rounded-pill px-5 py-2"
+                >
+                  طالب جديد
+                </button>
+              </a>
+            </div>
+            <div class="me-2 mt-1">
+              <a href="#">
+                <button
+                  class="btn_duration text-center text-white text-nowrap text-light fw-bold d-inline-block rounded-pill border-0 px-5 py-2"
+                >
+                  تسجيل الدخول
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- تم تسجيل الدخول -->
+          <!-- <div class="d-flex justify-content-center">
+          <div class=" position-relative mt-1 me-3">
+           <a href="cart.html">
+             <img src="images/cart.png" width="38" height="38">
+            <span class="position-absolute top-25 start-100 translate-middle badge rounded-pill" style="background-color: #DB903C;">
+                  0
+                </span>
+           </a>
+          </div>
+          <a href="profile.html"> <img src="images/p2.jpg" width="43" height="43"
+              class="rounded-circle me-3 imgBorder"  /></a>
+        </div> -->
+        </div>
+      </div>
+    </nav>
+    <!-- -- ===end nAvigation=== -- -->
+
+    <!-- Hero2 Section -->
+    <section class="hero2">
+      <img src="images/BgProfile.png" alt="" data-aos="fade-in" />
+
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">
+              معلوماتي الشخصية
+            </h3>
+            <div class="mt-4 d-flex justify-content-center">
+              <p
+                class="col-9"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                style="line-height: 50px"
+              >
+                منصة تعليمية فلسطينية لطلاب الثانوية العامة تهدف للنهضة الرقمية
+                في مجال التعليم عن بعد وإثراء المعلومات الخالصة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero2 Section -->
+
+    <div class="container-lg">
+      <div class="row justify-content-around">
+        <div class="col-md-3 shadow border-circle mt-5 bg-white py-5">
+          <div class="text-center">
+            <img
+              src="images/p2.jpg"
+              width="160"
+              height="150"
+              class="rounded-circle imgBorder"
+            />
+          </div>
+          <p class="fw-bold pColor text-center mt-3">فرح فرح</p>
+          <p class="text-black-50 text-center numStat mb-4">طالب ثانوية</p>
+          <!-- ===Tabs Div=== -->
+          <div class="tab">
+            <button
+              class="tablinks w-100 text-end text-nowrap active"
+              onclick="openTab(event, 'Personal-Information')"
+              id="info-profile"
+            >
+              <i class="bx bx-user"></i>
+              الملف الشخصي
+            </button>
+
+            <button
+              class="tablinks w-100 text-end"
+              onclick="openTab(event, 'Statistics')"
+            >
+              <i class="bx bxl-graphql"></i>
+              الإحصائيات
+            </button>
+
+            <!-- tab student -->
+            <button
+              class="tablinks w-100 text-end"
+              onclick="openTab(event, 'courses')"
+            >
+              <i class="bx bx-desktop"></i>
+              دورات المدرب
+            </button>
+
+            <!-- tab trainer -->
+            <button
+              class="tablinks w-100 text-end"
+              onclick="openTab(event, 'courses2')"
+            >
+              <i class="bx bx-desktop"></i>
+              دورات الطالب
+            </button>
+
+            <button
+              class="tablinks w-100 text-end"
+              onclick="openTab(event, 'notification')"
+            >
+              <i class="bx bxs-bell-ring"></i>
+              اشعاراتي
+            </button>
+
+            <button
+              class="tablinks w-100 text-end"
+              onclick="openTab(event, 'Log-Out')"
+            >
+              <i class="bx bx-log-out"></i>
+              تسجيل الخروج
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-8 mt-5 shadow position-relative bg-white">
+          <div id="Personal-Information" class="tabcontent">
+            <p class="pColor fw-bold mt-5">بيانات المعلم/ المدرب</p>
+            <div class="text-center">
+              <img
+                src="images/Person.jpg"
+                width="110"
+                height="100"
+                class="rounded-circle mb-4 imgBorder"
+              />
+            </div>
+            <form method="post" class="form theme-form">
+              <div class="row mt-3 d-flex">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label class="text-black-50">الاسم بالكامل </label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control py-2"
+                        placeholder="ادخل اسمك بالكامل"
+                      />
+                      <span class="text-danger"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label class="me-2 text-black-50">
+                      البريد الالكتروني
+                    </label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control py-2"
+                        placeholder="ادخل البريد الالكتروني"
+                      />
+                      <span class="text-danger"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2">المادة / الدورة</label>
+                    <div class="col-md-9">
+                      <select
+                        class="form-select shadow-sm py-2"
+                        aria-label=" select example "
+                        required=""
+                      >
+                        <option selected="">مدرب فرونت انذ</option>
+                        <option value="Gaza">Gaza</option>
+                        <option value="Ramala">Ramala</option>
+                        <option value="Alajaa">Alajaa</option>
+                      </select>
+
+                      <span
+                        asp-validation-for="user.Specialization"
+                        class="text-danger"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2">الجامعة</label>
+                    <div class="col-md-9">
+                      <select
+                        class="form-select shadow-sm py-2"
+                        aria-label=" select example "
+                        required=""
+                      >
+                        <option selected="">اسم الدورة</option>
+                        <option value="Gaza">IUG</option>
+                        <option value="Ramala">GTC</option>
+                        <option value="Alajaa">Alajaa</option>
+                      </select>
+                      <span
+                        asp-validation-for="user.Specialization"
+                        class="text-danger"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2"> عنوان السكن </label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control py-2"
+                        placeholder=" خانيونس- طريق المشروع- شارع السد العالي "
+                      />
+                      <span class="text-danger"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2">رقم الجوال </label>
+                    <div class="col-md-9">
+                      <input
+                        type="text"
+                        class="form-control py-2"
+                        placeholder="05972654 "
+                      />
+                      <span class="text-danger"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2">كلمة المرور </label>
+                    <div class="col-md-9">
+                      <input
+                        type="text"
+                        class="form-control py-2"
+                        placeholder="65564992 "
+                      />
+                      <span class="text-danger"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                  <div class="mb-3">
+                    <label class="me-2">تاكيد كلمة المرور</label>
+                    <div class="col-md-9">
+                      <input
+                        type="text"
+                        class="form-control py-2"
+                        placeholder="65564992 "
+                      />
+                      <span class="text-danger"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mt-3 mt-3">
+                  <div class="d-flex justify-content-center me-2">
+                    <button
+                      class="btn btn-light text-center text-nowrap fw-bold border-0 px-5 py-2 ms-2"
+                    >
+                      الغاء
+                    </button>
+                    <button
+                      class="btn_duration0 text-center text-white text-nowrap text-light fw-bold d-inline-block border-0 px-5 py-2 me-2"
+                    >
+                      حفظ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div id="Statistics" class="tabcontent d-none">
+            <div class="row">
+              <h5 class="pColor mt-5 fw-bold">احصائياتي</h5>
+
+              <div
+                class="row d-flex justify-content-center justify-content-around"
+              >
+                <div class="col-md-3 mt-5 text-center" id="std">
+                  <div class="my-4">
+                    <img src="images/STD.png" class="mb-3" />
+                    <p>عدد طلابي</p>
+                    <p class="text-black-50 numStat">55</p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mt-5 text-center" id="crs">
+                  <div class="my-4">
+                    <img src="images/CRS.png" class="mb-3" />
+                    <p>عدد دوراتي</p>
+                    <p class="text-black-50 numStat">12</p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mt-5 text-center" id="rate">
+                  <div class="my-4">
+                    <img src="images/RATE.png" class="mb-3" />
+                    <p>التقيمات</p>
+                    <p class="text-black-50 numStat">55</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row d-flex justify-content-center justify-content-around"
+              >
+                <div class="col-md-3 mt-5 text-center" id="intr">
+                  <div class="my-4">
+                    <img src="images/INTREVUE.png" class="mb-3" />
+                    <p>عدد القاءات</p>
+                    <p class="text-black-50 numStat">55</p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mt-5 text-center" id="lac">
+                  <div class="my-4">
+                    <img src="images/LAC.png" class="mb-3" />
+                    <p>عدد المحضرات المسجلة</p>
+                    <p class="text-black-50 numStat">55</p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mt-5 text-center" id="cert">
+                  <div class="my-4">
+                    <img src="images/CERT.png" class="mb-3" />
+                    <p>عدد شهاداتي</p>
+                    <p class="text-black-50 numStat">55</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="courses" class="tabcontent d-none">
+            <h5 class="pColor mt-5 fw-bold">دوراتي</h5>
+            <div class="row mt-4 d-flex justify-content-center w-100">
+              <div class="col-lg-4 col-md-5 mt-3">
+                <div class="card shadow">
+                  <div class="w-100 h-100 position-relative">
+                    <img
+                      src="images/c1.png"
+                      class="card-img-top"
+                      height="180"
+                      alt="..."
+                    />
+                    <div
+                      class="bgcolor position-absolute top-0 bottom-0 end-0 start-0 card2 position-relative"
+                    >
+                      <a
+                        href="#"
+                        class="position-absolute top-50 start-50 translate-middle"
+                      >
+                        <img src="images/play.png" width="60" height="60" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <i class="bx bx-user fs-4 ms-2 text-black-50"></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="bx bx-play-circle fs-4 ms-2 text-black-50"
+                        ></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bx bx-like fs-4 ms-2 text-black-50"></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold pColor">دورة برمجة فرونت اند</h5>
+                      <p class="text-black-50">
+                        هذا المساق المقدم من إدراك والجامعة الأمريكيةبالقاهرة
+                        سيقدم لك هذا النهج الإبداعي لحل المشكلات. ستتعلم أدوات
+                        وأطر التفكيرالتصميمي و ستتعرف عل
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="images/Person.jpg"
+                          width="40"
+                          height="40"
+                          class="rounded-circle"
+                        />
+                        <p style="font-size: 16px" class="me-2 mt-2">
+                          م. حمادة غالب
+                        </p>
+                      </div>
+                      <p class="mt-2 pColor fs-6 fw-bold">
+                        <del class="text-black-50 me-2">$90</del>$43
+                      </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button
+                        class="btn btn-outline text-center text-nowrap fw-bold d-inline-block mt-4 px-4 py-2"
+                      >
+                        اشتراك في الكورس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-5 mt-3">
+                <div class="card shadow">
+                  <div class="w-100 h-100 position-relative">
+                    <img
+                      src="images/c1.png"
+                      class="card-img-top"
+                      height="180"
+                      alt="..."
+                    />
+                    <div
+                      class="bgcolor position-absolute top-0 bottom-0 end-0 start-0 card2 position-relative"
+                    >
+                      <a
+                        href="#"
+                        class="position-absolute top-50 start-50 translate-middle"
+                      >
+                        <img src="images/play.png" width="60" height="60" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <i class="bx bx-user fs-4 ms-2 text-black-50"></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="bx bx-play-circle fs-4 ms-2 text-black-50"
+                        ></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bx bx-like fs-4 ms-2 text-black-50"></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold pColor">دورة برمجة فرونت اند</h5>
+                      <p class="text-black-50">
+                        هذا المساق المقدم من إدراك والجامعة الأمريكيةبالقاهرة
+                        سيقدم لك هذا النهج الإبداعي لحل المشكلات. ستتعلم أدوات
+                        وأطر التفكيرالتصميمي و ستتعرف عل
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="images/Person.jpg"
+                          width="40"
+                          height="40"
+                          class="rounded-circle"
+                        />
+                        <p style="font-size: 16px" class="me-2 mt-2">
+                          م. حمادة غالب
+                        </p>
+                      </div>
+                      <p class="mt-2 pColor fs-6 fw-bold">
+                        <del class="text-black-50 me-2">$90</del>$43
+                      </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button
+                        class="btn btn-outline text-center text-nowrap fw-bold d-inline-block mt-4 px-4 py-2"
+                      >
+                        اشتراك في الكورس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-5 mt-3">
+                <div class="card shadow">
+                  <div class="w-100 h-100 position-relative">
+                    <img
+                      src="images/c1.png"
+                      class="card-img-top"
+                      height="180"
+                      alt="..."
+                    />
+                    <div
+                      class="bgcolor position-absolute top-0 bottom-0 end-0 start-0 card2 position-relative"
+                    >
+                      <a
+                        href="#"
+                        class="position-absolute top-50 start-50 translate-middle"
+                      >
+                        <img src="images/play.png" width="60" height="60" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <i class="bx bx-user fs-4 ms-2 text-black-50"></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                      <div class="d-flex">
+                        <i
+                          class="bx bx-play-circle fs-4 ms-2 text-black-50"
+                        ></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bx bx-like fs-4 ms-2 text-black-50"></i>
+                        <p class="fw-bold text-black-50">30</p>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold pColor">دورة برمجة فرونت اند</h5>
+                      <p class="text-black-50">
+                        هذا المساق المقدم من إدراك والجامعة الأمريكيةبالقاهرة
+                        سيقدم لك هذا النهج الإبداعي لحل المشكلات. ستتعلم أدوات
+                        وأطر التفكيرالتصميمي و ستتعرف عل
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="images/Person.jpg"
+                          width="40"
+                          height="40"
+                          class="rounded-circle"
+                        />
+                        <p style="font-size: 16px" class="me-2 mt-2">
+                          م. حمادة غالب
+                        </p>
+                      </div>
+                      <p class="mt-2 pColor fs-6 fw-bold">
+                        <del class="text-black-50 me-2">$90</del>$43
+                      </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button
+                        class="btn btn-outline text-center text-nowrap fw-bold d-inline-block mt-4 px-4 py-2"
+                      >
+                        اشتراك في الكورس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="courses2" class="tabcontent d-none">
+            <h5 class="pColor mt-5 fw-bold">دوراتي</h5>
+            <div class="row mt-4 d-flex justify-content-center w-100">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="border-0 bg-light rounded-3">
+                    <tr class="text-center">
+                      <th>#</th>
+                      <th>صورة الدورة</th>
+                      <th>اسم الدورة</th>
+                      <th>عدد ساعات الدورة</th>
+                      <th>مدربو الدورة</th>
+                      <th>سعر الدورة</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-center">
+                      <td>
+                        <p>1</p>
+                      </td>
+                      <td>
+                        <img
+                          src="images/c1.png"
+                          width="40"
+                          height="40"
+                          class="rounded-circle"
+                        />
+                      </td>
+                      <td>دورة تصميم جرافيك</td>
+                      <td>45 ساعة</td>
+                      <td>محمد غالب واسامة العمري</td>
+                      <td>45 دولار</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>
+                        <p>1</p>
+                      </td>
+                      <td>
+                        <img
+                          src="images/c1.png"
+                          width="40"
+                          height="40"
+                          class="rounded-circle"
+                        />
+                      </td>
+                      <td>دورة تصميم جرافيك</td>
+                      <td>45 ساعة</td>
+                      <td>محمد غالب واسامة العمري</td>
+                      <td>45 دولار</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="notification" class="tabcontent d-none" style="height: 50vh">
+            <h5 class="pColor mt-5 fw-bold">الاشعارات</h5>
+            <div
+              class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle"
+            >
+              <div class="text-center">
+                <img src="images/bell.png" class="h-50 w-75" />
+                <p class="text-black-50 col-11 mt-5 text-center">
+                  لا يوجد اشعارات سيتم إخطارك بكل حدث مهم
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Log-Out" class="tabcontent d-none" style="height: 50vh">
+            <h5 class="pColor mt-5 fw-bold">الاشعارات</h5>
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h4 class="text-black-50">هل انت متاكد من الخروج؟!</h4>
+              <div class="d-flex justify-content-around mt-5">
+                <button
+                  class="btn_duration col-auto fw-bolder w-25 border-0 p-2 text-white rounded"
+                >
+                  نعم
+                </button>
+                <button
+                  class="btn btn-outline text-center text-nowrap fw-bold w-25 p-2"
+                >
+                  لا
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="fables-footer-image fables-after-overlay white-color pt-md-5 bg-rules mt-5"
+    >
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-5">
+            <div class="d-md-flex d-md-flex">
+              <img
+                src="images/الشعار.png"
+                class="ms-3"
+                width="95"
+                height="95"
+              />
+              <div class="mt-3">
+                <h3 class="pColor">اكاديمية بست ليرن التعليمية</h3>
+                <h4 class="pColor">Best Learn Academy</h4>
+              </div>
+            </div>
+            <h5 class="mt-4 text-center col-lg-8 lh-lg">
+              المنصة التعليمية الأولى على مستوى الوطن الخاصة بتقديم دروس عن بعد
+              لطلاب الثانوية العام
+            </h5>
+          </div>
+          <div class="col-md-2 col-sm-5 mt-4">
+            <h5 class="text-light fw-bold">الصفحات</h5>
+            <div class="d-flex mt-4">
+              <a href="index.html" class="lFooter">الرئيسية</a>
+            </div>
+            <div class="d-flex dFooter">
+              <a href="index.html" class="lFooter">من نحن</a>
+            </div>
+            <div class="d-flex dFooter">
+              <a href="index.html" class="lFooter">الدورات </a>
+            </div>
+            <div class="d-flex dFooter">
+              <a href="index.html" class="lFooter">اتصل بنا</a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-5 mt-4">
+            <h5 class="text-light fw-bold">دورتنا</h5>
+            <div class="d-flex mt-4">
+              <a href="index.html" class="lFooter">دورة تجربة المستخدم</a>
+            </div>
+            <div class="d-flex dFooter">
+              <a href="index.html" class="lFooter">دورة مونتاج</a>
+            </div>
+            <div class="d-flex dFooter">
+              <a href="index.html" class="lFooter">دورة تصميم جرافيك </a>
+            </div>
+            <div class="d-flex dFooter">
+              <a href="index.html" class="lFooter">دورة قيادة الحاسوب </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-5 mt-4">
+            <h5 class="text-light fw-bold">معلومات الإتصال</h5>
+            <div class="d-flex">
+              <i class="bx bxs-phone-outgoing fs-3 text-white lFooter"></i>
+              <p class="me-2 lFooter">+970594304049</p>
+            </div>
+            <div class="d-flex">
+              <i class="bx bxs-envelope fs-3 text-white"></i>
+              <p class="me-2 lFooter">hamada1998.2021@gmail.com</p>
+            </div>
+            <div class="d-flex">
+              <i class="bx bxs-location-plus fs-3 text-white"></i>
+              <p class="me-2 lFooter">فلسطين - شفا عمرو - كفر حنا</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white" />
+        <div class="d-flex justify-content-between">
+          <div class="d-none d-lg-block text-nowrap">
+            <h5 class="text-white mt-1">حقوق النشر محفوظة 2022</h5>
+          </div>
+          <div
+            class="copyright fables-main-background-color border-0 white-color text-white"
+          >
+            <div class="d-flex justify-content-center">
+              <a href="#" class="me-3">
+                <img width="18" height="18" src="images/facebook.png" />
+              </a>
+              <a href="#" class="me-3">
+                <img width="18" height="18" src="images/instagram.png" />
+              </a>
+              <a href="#" class="me-3">
+                <img width="18" height="18" src="images/twitter.png" />
+              </a>
+              <a href="#" class="me-3">
+                <img width="18" height="18" src="images/whatsapp.png" />
+              </a>
+            </div>
+          </div>
+          <div class="d-none d-lg-block text-nowrap">
+            <h5 class="text-white mt-1">اكاديمية بست ليرن التعليمية</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+      ///Tab
+      function openTab(evt, TabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          if (tabcontent[i].id !== TabName) {
+            tabcontent[i].classList.add("d-none");
+            tabcontent[i].classList.remove("d-block");
+          } else {
+            tabcontent[i].classList.add("d-block");
+            tabcontent[i].classList.remove("d-none");
+          }
+          console.log(tabcontent[i]);
+          console.log(evt);
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        evt.currentTarget.classList.add("active");
+      }
+
+      ///repeate
+      function repeatCard() {
+        let rowForCardLoop = document.getElementById("rowForCardLoop");
+        let cardLoop = document.getElementById("cardLoop");
+        let array = [];
+        for (let i = 0; i <= 2; i++) {
+          let newCard = cardLoop.cloneNode(true);
+          cardLoop.after(newCard);
+          array.push(newCard);
+        }
+      }
+      repeatCard();
+      console.log(cardLoop);
+      console.log(rowForCardLoop);
+    </script>
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script -->
+    <script src="Script.js"></script>
+  </body>
+</html>

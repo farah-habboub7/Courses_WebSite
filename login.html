@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <!-- language -->
+    <meta charset="utf-8" />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>login page</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon Box -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style Css -->
+    <link href="Style.css" rel="stylesheet" />
+
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="tabTembalte/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ===Navigation auth=== -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="Home.html">
+          <div class="d-flex">
+            <img
+              src="images/الشعار.png"
+              class="ms-3 mt-2"
+              width="55"
+              height="55"
+            />
+            <div class="mt-2">
+              <p class="pColor">اكاديمية بست ليرن التعليمية</p>
+              <p class="pColor mN fs-6">Best Learn Academy</p>
+            </div>
+          </div></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-md-flex justify-content-end w-100">
+            <div>
+              <a href="#">
+                <button
+                  class="btn btn-outline text-center text-nowrap btnAuth fw-bold d-inline-block rounded-pill px-5 py-2"
+                >
+                  طالب جديد
+                </button>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="me-md-3">
+                <button
+                  class="btn_duration text-center text-white text-nowrap btnAuth text-light fw-bold d-inline-block rounded-pill border-0 px-5 py-2"
+                >
+                  تسجيل الدخول
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- -- ===end nAvigation auth === -- -->
+
+    <div class="container-lg my-4">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6 bg-white p-5">
+          <h4 class="text-center">سجل الدخول لحسابك</h4>
+          <p class="text-black-50 text-center mt-2">
+            ليس لديك حساب على اكاديمية بيست ليرن؟
+            <span class="pColor">أنشىء حسابك</span>
+          </p>
+
+          <div class="d-md-flex justify-content-center">
+            <a href="#">
+              <button
+                class="btn text-center text-white text-nowrap mt-3 shadow-none fw-bold d-inline-block px-5 py-2"
+                style="background-color: #3b5998"
+              >
+                <i class="bx bxl-facebook text-white"></i>
+                عن طريق الفيسوبك
+              </button>
+            </a>
+
+            <a href="#" class="me-md-3">
+              <button
+                class="btn btn-danger text-center text-white text-nowrap mt-3 text-light shadow-none fw-bold d-inline-block border-0 px-5 py-2"
+              >
+                <i class="bx bxl-google text-white"></i>
+                عن طريق جوجل
+              </button>
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div
+              class="mx-4 col mt-3 w-50"
+              style="height: 2px; width: 50%; background-color: #eaeaea"
+            ></div>
+            <div>
+              <p class="fs-6 mt-4">او</p>
+            </div>
+            <div
+              class="mx-4 col mt-3 w-50"
+              style="height: 2px; width: 5%; background-color: #eaeaea"
+            ></div>
+          </div>
+
+          <form class="mt-5">
+            <div>
+              <label>البريد الالكتروني</label>
+              <input
+                type="email"
+                class="form-control shadow-none mt-2"
+                placeholder="ادخل بريدك الاكتروني"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <!-- <span  class="text-danger"
+                >Enter your email.</span
+              > -->
+            <div class="mt-4">
+              <label>كلمة المرور</label>
+              <input
+                type="text"
+                class="form-control shadow-none mt-2"
+                placeholder="كلمة السر"
+                id="exampleInputnaPassWord1"
+                aria-describedby="passwordHelp"
+              />
+              <!-- <span  class="text-danger">Please enter your name.</span> -->
+            </div>
+          </form>
+
+          <div class="text-start mt-3">
+            <a href="#">
+              <p class="text-black-50">هل نسيت كلمة المرور ؟</p>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="me-md-3">
+              <button
+                class="btn_duration0 text-center text-white text-nowrap mt-3 text-light fw-bold rounded-3 border-0 px-5 py-2"
+              >
+                تسجيل الدخول
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script -->
+    <script src="Script.js"></script>
+  </body>
+</html>
